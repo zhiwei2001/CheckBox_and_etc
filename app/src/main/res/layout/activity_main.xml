@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/box_cho_syrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="onButtonClicked"
+        android:text="Chocolate Syrup"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <CheckBox
+        android:id="@+id/box_sprinkles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="onButtonClicked"
+        android:text="Sprinkles"
+        app:layout_constraintTop_toBottomOf="@+id/box_cho_syrup"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <CheckBox
+        android:id="@+id/box_crus_nut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonClicked"
+        android:text="Crushed Nuts"
+        app:layout_constraintTop_toBottomOf="@+id/box_sprinkles"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <CheckBox
+        android:id="@+id/box_cherries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onButtonClicked"
+        android:text="Cherries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box_crus_nut" />
+
+    <CheckBox
+        android:id="@+id/box_occ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonClicked"
+        android:text="Orio Cookies Crumbles"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ShowToast"
+        app:layout_constraintTop_toBottomOf="@+id/box_cherries"
+        app:layout_constraintVertical_bias="0.058"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <Button
+        android:id="@+id/btn_ShowToast"
+        android:layout_width="164dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="280dp"
+        android:text="Show Toast"
+        android:onClick="onButtonClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
